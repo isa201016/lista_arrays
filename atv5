@@ -1,0 +1,16 @@
+const prompt = require('prompt-sync')();
+
+let produtos = [];
+
+// Solicita 5 produtos
+for (let i = 0; i < 5; i++) {
+    let produto = prompt(`Digite o ${i + 1}º produto: `);
+    produtos.push(produto);
+}
+
+// Remove o último produto cadastrado
+produtos.pop();
+
+// Mostra o array atualizado
+console.log("Array atualizado:");
+console.log(produtos);

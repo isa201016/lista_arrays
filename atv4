@@ -1,0 +1,17 @@
+const prompt = require('prompt-sync')();
+
+let nomes = [];
+
+// Solicita 5 nomes
+for (let i = 0; i < 5; i++) {
+    let nome = prompt(`Digite o ${i + 1}º nome: `);
+    nomes.push(nome);
+}
+
+// Solicita mais um nome
+let novoNome = prompt("Digite mais um nome: ");
+nomes.push(novoNome);
+
+// Mostra o array atualizado
+console.log("Array atualizado:");
+console.log(nomes);
